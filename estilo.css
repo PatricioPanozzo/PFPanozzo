@@ -1,6 +1,9 @@
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /*  Plantilla base */
@@ -14,78 +17,63 @@ flex-direction: column;
 min-height: 100vh;
 }
 
-
-.content h1 {
-color: #fff;
-text-align: center;
-padding: 70px;
-
-}
-.content p{
-color: #fff;
-text-align: center;
-margin: 0;
-
+.background{
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
 }
 
-
-
+.text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
 
 
 /*  Barra de navegacion */
+.custom-navbar {
+  background-color: #0a0a0a; 
 
-.navegacion{
-  position: fixed;
-  padding: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #fff;
+}
   
+.custom-navbar .navbar-nav .nav-link {
+  color: #ffffff; 
 
 }
 
-.menu li{
-  display: inline-block;
-  margin: 0 10px;
+
+
+.navbar-toggler-icon {
+  color: rgb(223, 206, 206); 
 }
-.menu li a {
+
+
+.card-link {
   text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s ease;
+  color: #fff
 }
 
-.menu li a:hover {
-color: #fff;
-font-size: 17px;
-font-weight: bold;
-}
 
-.contacto{
-text-align: center;
-font-size: 15px;
-margin: 100px auto;
-color: #fff;
-}
+
 
 /*  formulario de contacto */
 
-form{
-  margin: auto;
-  max-width: 500px;
-  
+.contactobody{
+  background-image: url("./img/fotoFormulario.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-column-gap: 16px; 
-  grid-row-gap: 20px; 
-}
+
+
+
+
 
 
 .menu-section {
@@ -133,16 +121,10 @@ opacity: 1;
 opacity: 1;
 }
 
-
-
-
-
-
-
 /*  Footer */
 footer{
   text-align: center;
-  background-color: #292e30;
+  background-color: #181a1b;
   padding: 1em 0;
   margin-top: auto;
 }
