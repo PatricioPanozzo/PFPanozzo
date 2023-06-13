@@ -1,0 +1,39 @@
+.contactobody{
+    background-image: url("../img/fotoFormulario.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .contacto-card {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+  .card-header-contacto {
+    text-align: center;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+  }
+
+  .text-black {
+    color: #000000;
+  }
+  
