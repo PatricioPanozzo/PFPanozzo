@@ -140,7 +140,8 @@ contactobody {
   background: rgba(24, 20, 20, 0.987);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255, 255, 255, 0.6);
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 60px; }
 
 .login-box .form-group {
   position: relative; }
@@ -236,6 +237,15 @@ contactobody {
 .login-box a span {
   position: absolute;
   display: block; }
+
+.navbar-toggler {
+  z-index: 1;
+  /* Asegura que el botón del menú hamburguesa esté por encima del formulario */ }
+
+@media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 120px;
+    /* Aumenta el margen inferior para evitar la superposición */ } }
 
 .card-proyectos {
   position: relative;
