@@ -238,7 +238,6 @@
   .login-box {
     position: relative;
     top: 50%;
-    /* Ajusta el valor de top para agregar espaciado arriba */
     left: 40%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -246,8 +245,7 @@
     z-index: 1;
     transition: top 0.3s; }
   .navbar-collapse.show ~ .login-box {
-    top: calc(50% - 30px);
-    /* Ajusta el valor de top para que el formulario se mueva hacia abajo */ }
+    top: calc(50% - 30px); }
   .navbar-collapse.show {
     z-index: 2; } }
 
@@ -350,7 +348,6 @@
   background: #212121;
   box-shadow: 15px 15px 30px #191919, -15px -15px 30px #3c3c3c;
   margin: 20px auto 40px;
-  /* Ajusta el margen inferior para agregar más espacio */
   overflow: hidden;
   border-bottom: 2px solid white; }
 
