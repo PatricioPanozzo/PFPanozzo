@@ -3,18 +3,18 @@
 .PresentacionC {
   color: #fff;
   text-align: center;
-  max-width: 800px; /* Ajusta el valor según tus necesidades */
-  margin: 0 auto; /* Centra horizontalmente el elemento */
+  max-width: 800px; 
+  margin: 0 auto; 
   font-size: 18px;
-  padding: 1rem 0; /* Ajusta el tamaño de fuente según tus preferencias */
+  padding: 1rem 0; 
 }
 
 .conocimientop {
   color: #fff;
   text-align: center;
-  max-width: 800px; /* Ajusta el valor según tus necesidades */
-  margin: 0 auto; /* Centra horizontalmente el elemento */
-  font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+  max-width: 800px; 
+  margin: 0 auto; 
+  font-size: 18px; 
 }
 
 
@@ -23,9 +23,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Cambiado a flex-start para evitar que las tarjetas se centren verticalmente */
-  min-height: calc(100vh - 100px); /* Restamos la altura del footer */
-  margin-bottom: 100px; /* Agregamos un margen inferior para el footer */
+  align-items: flex-start; 
+  min-height: calc(100vh - 100px); 
+  margin-bottom: 100px; 
 }
 
 .card-conocimiento {
@@ -121,33 +121,41 @@
 
 
 @media (max-width: 767px) {
+  .PresentacionC h1,
+  .conocimientop h1,
+  .PresentacionC p,
+  .conocimientop p {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .container {
+    align-items: center;
+  }
+  
   .card-conocimiento {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin: 2rem 0;
+    margin: 20px 0;
     padding: 1.5rem;
   }
-
-  .card-image-conocimiento {
+  
+  .card-image-conocimientohtml,
+  .card-image-conocimientocss {
     width: 150px;
     height: 150px;
   }
-
+  
   .card-title-conocimiento {
     font-size: 1.5rem;
   }
-
+  
   .card-description-conocimiento {
     font-size: 1.2rem;
   }
-
-  .PresentacionC p,
-  .conocimientop p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
+
 
 
 
